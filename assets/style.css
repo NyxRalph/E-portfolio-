@@ -196,12 +196,38 @@ MODAL
 }
 .modal__half{
     width: 50%;
+    padding: 40px 72px;
 }
 .modal__about{
     background-color: lightgray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 .modal__contact{
     background-color: #242424;
+    color: white;
+}
+.modal__languages{
+    display: flex;
+    flex-wrap: wrap;
+}
+.modal__language{
+    width: 25%;
+    padding: 16px;
+}
+.modal__language--img{
+    width: 100%;
+}
+.modal__title{
+    font-size: 26px;
+}
+.modal__sub-title{
+    margin: 12px 0px 24px 0px;
+}
+.modal__para{
+    margin-bottom: 12px;
+    line-height: 1.75;
 }
 /* 
 
