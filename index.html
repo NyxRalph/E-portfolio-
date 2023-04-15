@@ -11,7 +11,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="./assets/style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
-    <script src="https://example.com/fontawesome/v6.4.0/js/all.js" data-auto-replace-svg="nest"></script>
+    
+</head>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
 </script>
@@ -45,7 +46,7 @@
                     link__hover-effect--black
                     ">About</a>
                 </li>
-                <li class="nav__link">
+                <li class="nav__link" onclick="toggleModal()">
                     <a href="" class="
                     nav__link--anchor
                     link__hover-effect
@@ -67,7 +68,7 @@
             <h1 class="title secondary__title"><b class="color-change"> I'm Ralph</b></h1>
             <p class="header__para">I'm a <b class="color-change">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.
                 <br>
-                Here's a bit more <b class="color-change"> about me.</b>
+                Here's a bit more <b class="color-change" onclick="toggleModal()"> about me.</b>
             </p>
             <div class="social__list">
                 <a href="#" class="social__link click" >
@@ -118,6 +119,7 @@
                 </div>
             </div>
             <div class="modal__half modal__contact">
+                <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
                 <h3 class="modal__title modal__title--contact ">
                     Let's have a chat
                 </h3>
@@ -148,7 +150,7 @@
                     Thanks for the message , looking forward to keeping to you soon
                 </div>
             </div>
-            <i class="fas fa-times modal__exit click"></i>
+           
         </div>
     </section>
     <section id="projects">
