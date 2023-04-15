@@ -8,6 +8,16 @@
     <link rel="stylesheet" href="./assets/style.css">
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
     <script src="https://example.com/fontawesome/v6.4.0/js/all.js" data-auto-replace-svg="nest"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+
+<script src="./assets/index.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("Yw5ie2FScyLVWpYuLP");
+   })();
+</script>
 
 </head>
 <body>
@@ -110,18 +120,18 @@
                 <h4 class="modal__sub-title modal__sub-title--contact ">
                     I'd love to hear from you
                 </h4>
-                <form action=" " id="contact__form">
+                <form  id="contact__form" onsubmit="contact(event)">
                     <div class="form__item">
                         <label class="form__item--label" >Name</label>
-                        <input class="input" name="user_name" type="text" required></input>
+                        <input class="input" name="user_name" type="text" ></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label" >Email</label>
-                        <input class="input" name="user_email" type="text" required></input>
+                        <input class="input" name="user_email" type="text" ></input>
                     </div>
                     <div class="form__item">
                         <label class="form__item--label" >Message</label>
-                        <textarea class="input" name="message" type="text" required></textarea>
+                        <textarea class="input" name="message" type="text" ></textarea>
                     </div>
                     <button id="contact__submit" class="form__submit">
                         Send it my way
@@ -130,7 +140,11 @@
                 <div class="modal__overlay modal__overlay--loading">
                     <i class="fas fa-spinner"></i>
                 </div>
+                <div class="modal__overlay modal__overlay--success">
+                    Thanks for the message , looking forward to keeping to you soon
+                </div>
             </div>
+            <i class="fas fa-times modal__exit click"></i>
         </div>
     </section>
     <section id="projects">
