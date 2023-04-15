@@ -31,6 +31,34 @@ button{
     margin: 0 auto;
     padding: 0px 12px;
 }
+input,
+textarea{
+    width: 100%;
+    background-color: #242424;
+    color: #fff;
+    outline: none;
+    border: 1px solid #c0c4cc;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    height: 40px;
+    transition: all 300ms ease;
+}
+input:hover, textarea:hover {
+    border-color: #dcdfe6;
+}
+input:focus, textarea:focus {
+    border-color: #00ADB5;
+    transition: all 300ms ease;
+}
+textarea{
+    resize: vertical;
+    height: 100px;
+}
+label{
+    font-size: 14px;
+    font-weight: bold;
+}
 /* 
 
 NAVIGATION
@@ -197,12 +225,14 @@ MODAL
 .modal__half{
     width: 50%;
     padding: 40px 72px;
-}
-.modal__about{
-    background-color: lightgray;
     display: flex;
     flex-direction: column;
     justify-content: center;
+    position: relative;
+}
+.modal__about{
+    background-color: lightgray;
+   
 }
 .modal__contact{
     background-color: #242424;
@@ -215,6 +245,26 @@ MODAL
 .modal__language{
     width: 25%;
     padding: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: all 300ms ease;
+}
+.language__name{
+    position: absolute;
+    bottom: -10px;
+    transform: scale(0);
+    transition: all 300ms ease;
+}
+.modal__language:hover{
+    filter: brightness(80%);
+    transform: scale(0.9);
+    transition: all 300ms ease;
+}
+.modal__language:hover .language__name{
+    transform: scale(1);
+
 }
 .modal__language--img{
     width: 100%;
@@ -224,12 +274,41 @@ MODAL
 }
 .modal__sub-title{
     margin: 12px 0px 24px 0px;
+    font-size: 14px;
 }
 .modal__para{
     margin-bottom: 12px;
     line-height: 1.75;
 }
-/* 
+.form__item{
+    margin-bottom: 20px;
+}
+.form__submit{
+    background-color: #00ADB5;
+    border: 2px solid #00ADB5;
+    color: white;
+    font-weight: 700;
+    width: 100%;
+    max-width: 240px;
+    padding: 12px 24px;
+    font-size: 20px;
+    transition: all 300ms ease;
+}
+.form__submit:hover{
+    border-color: #fff;
+    background-color: transparent;
+}
+.form__submit:active{
+    border-color: #00ADB5;
+    color: #00ADB5;
+}
+.modal__overlay--loading{
+    background-color: #00ADB5;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+/*
 
 PROJECTS
 

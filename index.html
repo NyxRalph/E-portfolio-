@@ -87,19 +87,50 @@
                 <div class="modal__languages">
                     <figure class="modal__language">
                         <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <span class="language__name">HTML</span>
                     </figure>
                     <figure class="modal__language">
                         <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <span class="language__name">HTML</span>
                     </figure>
                     <figure class="modal__language">
                         <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <span class="language__name">HTML</span>
                     </figure>
                     <figure class="modal__language">
                         <img class="modal__language--img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/38/HTML5_Badge.svg/240px-HTML5_Badge.svg.png" alt="">
+                        <span class="language__name">HTML</span>
                     </figure>
                 </div>
             </div>
-            <div class="modal__half modal__contact">Let's have a chat</div>
+            <div class="modal__half modal__contact">
+                <h3 class="modal__title modal__title--contact ">
+                    Let's have a chat
+                </h3>
+                <h4 class="modal__sub-title modal__sub-title--contact ">
+                    I'd love to hear from you
+                </h4>
+                <form action=" " id="contact__form">
+                    <div class="form__item">
+                        <label class="form__item--label" >Name</label>
+                        <input class="input" name="user_name" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" >Email</label>
+                        <input class="input" name="user_email" type="text" required></input>
+                    </div>
+                    <div class="form__item">
+                        <label class="form__item--label" >Message</label>
+                        <textarea class="input" name="message" type="text" required></textarea>
+                    </div>
+                    <button id="contact__submit" class="form__submit">
+                        Send it my way
+                    </button>
+                </form>
+                <div class="modal__overlay modal__overlay--loading">
+                    <i class="fas fa-spinner"></i>
+                </div>
+            </div>
         </div>
     </section>
     <section id="projects">
