@@ -1,3 +1,16 @@
+let isModalOpen = false
+let contrastToggle = false
+
+function toggleContrast(){
+    contrastToggle = !contrastToggle; 
+    if(contrastToggle){
+    document.body.classList += ' dark__theme'
+    }
+    else{
+    document.body.classList.remove('dark__theme')
+    }
+}
+
 function contact(event) {
 
     event.preventDefault();
@@ -26,7 +39,7 @@ function toggleModal() {
     console.log('toggleModal()')
 }
 
-let isModalOpen = false
+
 
 function toggleModal(){
     if (isModalOpen){

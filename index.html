@@ -53,12 +53,14 @@
                     link__hover-effect--black
                     ">Contact me</a>
                 </li>
-                <li class="nav__link click ">
-                    <a href="" class="
+                <li class="nav__link click" onclick="toggleContrast()">
+                    <a href=""  class="
                     nav__link--anchor
                     link__hover-effect
                     link__hover-effect--black
-                    "><img id="contrast__button" src="./assets/contrast.png" alt=""></a>
+                    ">
+                    <i class="fas fa-adjust"  id="contrast__button" ></i>
+                </a>
                 </li>
             </ul>
         </nav>
@@ -68,7 +70,7 @@
             <h1 class="title secondary__title"><b class="color-change"> I'm Ralph</b></h1>
             <p class="header__para">I'm a <b class="color-change">Frontend Software Engineer</b> with a strong passion for building web applications with great user experiences.
                 <br>
-                Here's a bit more <b class="color-change" onclick="toggleModal()"> about me.</b>
+                Here's a bit more <b class="color-change click" onclick="toggleModal()"> about me.</b>
             </p>
             <div class="social__list">
                 <a href="#" class="social__link click" >
