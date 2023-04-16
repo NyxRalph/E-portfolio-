@@ -74,6 +74,9 @@ nav,
     visibility: hidden;
     transition: all 400ms  ;
 }
+.dark__theme{
+    width: 100%;
+}
 /* 
 
 NAVIGATION
