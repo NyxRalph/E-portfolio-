@@ -110,6 +110,7 @@ section{
 .dark__theme .mail__btn{
     background-color: #fff;
     color: #00ADB5;
+    border: 1px solid #00ADB5;
 }
 /* 
 
