@@ -74,8 +74,42 @@ nav,
     visibility: hidden;
     transition: all 400ms  ;
 }
-.dark__theme{
-    width: 100%;
+.dark__theme .title,
+.dark__theme .nav__link--anchor,
+.dark__theme .header__para,
+.dark__theme .contrast__button,
+.dark__theme .section__title,
+.dark__theme .section__sub-title
+{
+  color: white; 
+}
+section{
+    transition: all 300ms ease;
+}
+.dark__theme section{
+    transition: all 300ms ease;
+}
+.dark__theme section{
+    background-color: #222831;
+}
+.dark__theme .contrast__button{
+    filter: invert(100%);
+}
+.dark__theme .nav__link--anchor:after{
+    background-color: white;
+}
+.dark__theme #personal-logo{
+    filter: invert(100%);
+}
+.dark__theme .scroll__icon{
+    border: 2px solid #00ADB5;
+}
+.dark__theme .scroll__icon:after{
+    background-color: #00ADB5;
+}
+.dark__theme .mail__btn{
+    background-color: #fff;
+    color: #00ADB5;
 }
 /* 
 
@@ -503,7 +537,6 @@ footer{
     height: 3px;
     width: 0;
     right: 0;
- 
     transition: all 300ms ease;
 
 }
