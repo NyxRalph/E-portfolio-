@@ -1,5 +1,6 @@
 let isModalOpen = false
 let contrastToggle = false
+const scaleFactor = 1 / 20
 
 function toggleContrast(){
     contrastToggle = !contrastToggle; 
@@ -48,4 +49,16 @@ function toggleModal(){
     }
     isModalOpen = true
     return document.body.classList += ' modal__open'
+}
+
+function moveBackground(event){
+   const shapes = document.querySelectorAll('.shape')
+   const x = event.clientX * scaleFactor
+   const y = event.clientY * scaleFactor
+    
+   for( i = 0 ; i < shapes.length ; ++i ){
+    shapes[i].style.transform = `translate(${x}px ,${y}px)`
+
+   }
+
 }
