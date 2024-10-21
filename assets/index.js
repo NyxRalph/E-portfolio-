@@ -17,7 +17,7 @@ function contact(event) {
     event.preventDefault();
     // const loading = document.querySelector('.modal__overlay--loading');
     // const success = document.querySelector('.modal__overlay--success');
-    loading.classList += " modal__overlay--visible";
+    // loading.classList += " modal__overlay--visible";
     emailjs
     .sendForm(
         'service_olyne3m',
