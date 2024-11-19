@@ -271,6 +271,9 @@ LANDING PAGE
 .social__icon{
     width: 50px;
 }
+.social__icon{
+    width: 50px;
+}
 
 @keyframes scroll {
 0%{
