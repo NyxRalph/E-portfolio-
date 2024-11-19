@@ -80,7 +80,7 @@ nav,
 .dark__theme .title,
 .dark__theme .nav__link--anchor,
 .dark__theme .header__para,
-.dark__theme .contrast__button,
+.dark__theme #contrast__button,
 .dark__theme .section__title,
 .dark__theme .section__sub-title
 {
@@ -95,7 +95,8 @@ section{
 .dark__theme section{
     background-color: #222831;
 }
-.dark__theme .contrast__button{
+.dark__theme 
+{
     filter: invert(100%);
 }
 .dark__theme .nav__link--anchor:after{
@@ -223,7 +224,9 @@ LANDING PAGE
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 20px;
+    padding: 8px ;
+    margin: 0;
+
 }
 .mail__btn{
     width: 70px;
@@ -264,6 +267,9 @@ LANDING PAGE
     background-color: #242424;
     border-radius: 2px;
     animation: scroll 1000ms infinite alternate-reverse;
+}
+.social__icon{
+    width: 50px;
 }
 
 @keyframes scroll {
