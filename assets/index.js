@@ -8,7 +8,7 @@ function toggleContrast(){
     document.body.classList += ' dark__theme'
     }
     else{
-        document.body.classList.remove('dark__theme')
+    document.body.classList.remove('dark__theme')
     }
 }
 
