@@ -66,3 +66,7 @@ function moveBackground(event){
    }
 
 }
+// background: radial-gradient(200px at 278px 5.92188px, rgba(142, 78, 198, 0.125), transparent 80%);`
+
+// transform-style: preserve-3d;
+//     transform: perspective(650px) rotateX(0deg) rotateY(0deg) scale3d(1, 1, 1);

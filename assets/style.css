@@ -97,7 +97,7 @@ section{
 }
 .dark__theme 
 {
-    filter: invert(100%);
+    /* filter: invert(100%); */
 }
 .dark__theme .nav__link--anchor:after{
     background-color: white;
