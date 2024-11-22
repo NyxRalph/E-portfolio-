@@ -51,14 +51,6 @@ function toggleModal(){
     isModalOpen = true
     return document.body.classList += ' modal__open'
 }
-function toggleModal(){
-    if (isModalOpen){
-        isModalOpen = false
-        return document.body.classList.remove('modal__open')
-    }
-    isModalOpen = true
-    return document.body.classList += ' modal__open'
-}
 
 function moveBackground(event){
     const shapes = document.querySelectorAll('.shape')
