@@ -36,10 +36,10 @@ function contact(event) {
     }) 
 }
 
-// function toggleModal() {
-//     document.body.classList += ' modal__open';
-//     console.log('toggleModal()')
-// }
+function toggleModal() {
+    document.body.classList += ' modal__open';
+    console.log('toggleModal()')
+}
 
 
 
