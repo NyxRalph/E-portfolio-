@@ -83,20 +83,23 @@ function moveBackground(event) {
 //   }
 // }
 
-const project = document.querySelectorAll("project");
+const project = document.querySelectorAll(" li.project");
 const scalefacterProject = 1 / 21;
 
-function moveProject(event) {
-  project.style.transform = `perspective(650px) rotateX( ${
-    event.clientY * scalefacterProject
-  }deg) rotateY(-${event.clientX * scalefacterProject}deg) scale3d(1, 1, 1)`;
-  project.style.transition = "transform 0.2s";
-}
 
-function reset() {
-  project.style.transform = `perspective(800px) rotateX(0deg) rotateY(0deg)`;
-  project.style.transition = `transform 0.2s`;
-}
+console.log(project)
 
-document.addEventListener("mousemove", moveBox);
-document.addEventListener("mouseleave", reset);
+// function moveProject(event) {
+//   project.style.transform = `perspective(800px) rotateX( ${
+//     event.clientY * scalefacterProject
+//   }deg) rotateY(-${event.clientX * scalefacterProject}deg) scale3d(1, 1, 1)`;
+//   project.style.transition = "transform 0.2s";
+// }
+
+// function reset() {
+//   project.style.transform = `perspective(800px) rotateX(0deg) rotateY(0deg)`;
+//   project.style.transition = `transform 0.2s`;
+// }
+
+// document.addEventListener("mousemove", moveBox);
+// document.addEventListener("mouseleave", reset);
