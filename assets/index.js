@@ -83,23 +83,25 @@ function moveBackground(event) {
 //   }
 // }
 
-const project = document.querySelectorAll(" li.project");
+const projects = document.querySelectorAll("div.project__wrapper--bg");
 const scalefacterProject = 1 / 21;
 
+function moveProject(event) {
+  projects.forEach(project => {
+    project.style.transform = `perspective(800px) rotateX(${
+      (event.clientY - window.innerHeight / 2) * scalefacterProject
+    }deg) rotateY(${(event.clientX - window.innerWidth / 2) * scalefacterProject}deg) scale3d(1, 1, 1)`;
+  });
+}
 
-console.log(project)
+function reset() {
+  projects.forEach(project => {
+    project.style.transform = `perspective(800px) rotateX(0deg) rotateY(0deg)`;
+    project.style.transition = `transform 0.2s`;
+    console.log(project)
+  });
+}
 
-// function moveProject(event) {
-//   project.style.transform = `perspective(800px) rotateX( ${
-//     event.clientY * scalefacterProject
-//   }deg) rotateY(-${event.clientX * scalefacterProject}deg) scale3d(1, 1, 1)`;
-//   project.style.transition = "transform 0.2s";
-// }
-
-// function reset() {
-//   project.style.transform = `perspective(800px) rotateX(0deg) rotateY(0deg)`;
-//   project.style.transition = `transform 0.2s`;
-// }
-
-// document.addEventListener("mousemove", moveBox);
-// document.addEventListener("mouseleave", reset);
+document.addEventListener("mousemove", moveProject);
+document.addEventListener("mouseleave", reset);
+``
