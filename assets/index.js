@@ -55,14 +55,14 @@ function moveBackground(event) {
   const x = event.clientX * scaleFactor;
   const y = event.clientY * scaleFactor;
 
-  for (i = 0; i < shapes.length; ++i) {
-    const isOdd = i % 2 !== 0;
-    const boolint = isOdd ? -1 : 1;
+  // for (i = 0; i < shapes.length; ++i) {
+  //   const isOdd = i % 2 !== 0;
+  //   const boolint = isOdd ? -1 : 1;
 
-    shapes[i].style.transform = `translate(${x * boolint}px  ,${
-      y * boolint
-    }px)`;
-  }
+  //   shapes[i].style.transform = `translate(${x * boolint}px  ,${
+  //     y * boolint
+  //   }px)`;
+  // }
 }
 
 function moveProject(event) {
