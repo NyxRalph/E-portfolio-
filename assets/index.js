@@ -2,14 +2,14 @@ let isModalOpen = false;
 let contrastToggle = false;
 const scaleFactor = 1 / 20;
 
-function toggleContrast() {
-  contrastToggle = !contrastToggle;
-  if (contrastToggle) {
-    document.body.classList += " dark__theme";
-  } else {
-    document.body.classList.remove("dark__theme");
-  }
-}
+// function toggleContrast() {
+//   contrastToggle = !contrastToggle;
+//   if (contrastToggle) {
+//     document.body.classList += " dark__theme";
+//   } else {
+//     document.body.classList.remove("dark__theme");
+//   }
+// }
 
 function contact(event) {
   event.preventDefault();
